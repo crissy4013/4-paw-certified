@@ -1,7 +1,7 @@
 import React from "react";
 
-const EmptyLayout = props => {
+const Play = props => {
   return <div style={{ height: "inherit" }}>{props.children}</div>;
 };
 
-export default EmptyLayout;
+export default Play;

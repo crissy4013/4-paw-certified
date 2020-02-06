@@ -12,10 +12,12 @@ import Home from "./containers/Home";
 import Setting from "./containers/Setting";
 
 import MainLayout from "./layouts/MainLayout";
-import EmptyLayout from "./layouts/EmptyLayout";
+import EmptyLayout from "./layouts/Play";
+import BottomNav from "./components/BottomNav/BottomNav";
+import Play from "../src/components/Play"
 
 const NotFound = () => {
-  return <div>NotFound</div>;
+  return <div>Time to play</div>;
 };
 
 const DashboardRoute = ({ component: Component, ...rest }) => {
@@ -56,10 +58,14 @@ class App extends Component {
             <Switch>
               <DashboardRoute path="/dashboard" component={Home} />
               <DashboardRoute path="/setting" component={Setting} />
+              
               <DashboardRoute exact path="/" component={Home} />
               <EmptyRoute component={NotFound} />
             </Switch>
           </Router>
+          <Play/>
+          <BottomNav/>
+
         </div>
       </MuiThemeProvider>
     );

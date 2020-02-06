@@ -41,7 +41,7 @@ const Header = props => {
           noWrap
           className={classes.title}
         >
-          Dashboard
+          Care Schedule
         </Typography>
         <IconButton color="inherit">
           <Badge badgeContent={4} color="secondary">

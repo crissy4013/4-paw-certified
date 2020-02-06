@@ -55,15 +55,47 @@ const Sidebar = props => {
             <ListItemIcon>
               <DashboardIcon />
             </ListItemIcon>
-            <ListItemText primary="Dashboard" />
+            <ListItemText primary="My pet info" />
           </ListItem>
+        </Link>
+        <Link to="/">
+          <ListItem button>
+            <ListItemIcon>
+              <DashboardIcon />
+            </ListItemIcon>
+            <ListItemText primary="Dog's Name" />
+          </ListItem>
+        </Link>
+        <Link to="/">
+          <ListItem button>
+            <ListItemIcon>
+              <DashboardIcon />
+            </ListItemIcon>
+            <ListItemText primary="Gender" />
+          </ListItem>
+        </Link>
+        <Link to="/">
+          <ListItem button>
+            <ListItemIcon>
+              <DashboardIcon />
+            </ListItemIcon>
+            <ListItemText primary="Weight" />
+          </ListItem>
+          <Link to="/">
+          <ListItem button>
+            <ListItemIcon>
+              <DashboardIcon />
+            </ListItemIcon>
+            <ListItemText primary="Age" />
+          </ListItem>
+        </Link>
         </Link>
         <Link to="/setting">
           <ListItem button>
             <ListItemIcon>
               <SettingsIcon />
             </ListItemIcon>
-            <ListItemText primary="Orders" />
+            <ListItemText primary="Growing Schedule" />
           </ListItem>
         </Link>
       </List>
