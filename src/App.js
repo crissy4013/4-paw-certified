@@ -15,6 +15,7 @@ import MainLayout from "./layouts/MainLayout";
 import EmptyLayout from "./layouts/Play";
 import BottomNav from "./components/BottomNav/BottomNav";
 import Play from "../src/components/Play"
+import Food from "../src/components/Food"
 
 const NotFound = () => {
   return <div>Time to play</div>;
@@ -64,6 +65,7 @@ class App extends Component {
             </Switch>
           </Router>
           <Play/>
+          <Food/>
           <BottomNav/>
 
         </div>

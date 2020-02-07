@@ -1,3 +1,37 @@
 h1{
     text-align: center;
 }
+p{
+    text-align: left;
+    font-size: 30pt;
+}
+.topic{
+    font-size: 30pt;
+    font-weight: bold;
+    
+}
+
+.middle{
+    padding-left: 2em;
+}
+div.experience{
+    padding-left: 2em;
+    align-self: flex-end;
+
+    
+}
+div.outer{
+    box-shadow: 0 3px 5px 2px grey;
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)';
+
+
+   
+  
+    height: 48;
+    padding: 0 30px;
+    
+}
+
+
+
+
