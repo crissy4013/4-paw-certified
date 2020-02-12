@@ -23,12 +23,11 @@ div.experience{
 div.outer{
     box-shadow: 0 3px 5px 2px grey;
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)';
-
-
-   
-  
     height: 48;
     padding: 0 30px;
+    min-width: 400px;
+    max-width: 800px;
+    margin-left: 28rem;
     
 }
 

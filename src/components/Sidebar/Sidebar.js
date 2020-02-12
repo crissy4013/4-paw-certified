@@ -40,7 +40,7 @@ const Sidebar = props => {
   const { open, classes } = props;
   return (
     <Drawer
-      variant="permanent"
+      variant="persistent"
       classes={{
         paper: classNames(
           classes.drawerPaper,

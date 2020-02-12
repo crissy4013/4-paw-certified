@@ -12,7 +12,7 @@ import Home from "./containers/Home";
 import Setting from "./containers/Setting";
 
 import MainLayout from "./layouts/MainLayout";
-import EmptyLayout from "./layouts/Play";
+import EmptyLayout from "./layouts/EmptyLayout";
 import BottomNav from "./components/BottomNav/BottomNav";
 import Play from "../src/components/Play"
 import Food from "../src/components/Food"

@@ -17,7 +17,7 @@ import {
 function Play (){
 
     return(
-        <div class='outer' style={{display:'flex', paddingLeft:500,  border:'groove' }}>
+        <div class='outer' style={{display:'flex',  border:'groove' }}>
             <div><p>picture</p></div>
             {/* <img>Picture</img> */}
             <div class="middle">
