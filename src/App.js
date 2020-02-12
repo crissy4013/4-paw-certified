@@ -64,8 +64,8 @@ class App extends Component {
               <EmptyRoute component={NotFound} />
             </Switch>
           </Router>
-          <Play/>
-          <Food/>
+          {/* <Play/>
+          <Food/> */}
           <BottomNav/>
 
         </div>
