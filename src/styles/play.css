@@ -30,6 +30,11 @@ div.outer{
     margin-left: 28rem;
     
 }
+.sideimg{
+    min-width: 100px;
+    max-width: 150px;
+    height: 48;
+}
 
 
 

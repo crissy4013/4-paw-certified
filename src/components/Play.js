@@ -14,11 +14,22 @@ import {
     Input
   } from 'reactstrap';
 
+export function Certified (props){
+    return(
+        
+        <p>{props.completed}XP</p>
+    )
+}
 function Play (props){
 
     return(
+        
         <div class='outer' style={{display:'flex',  border:'groove' }}>
-            <div><p>picture</p></div>
+            <div  style ={{
+                display: 'flex',
+
+            }}>
+                <img class='sideimg' src = {props.picture}/></div>
             {/* <img>Picture</img> */}
             <div class="middle">
                 <p class="topic">{props.title}</p>
