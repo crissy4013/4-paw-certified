@@ -2,8 +2,11 @@ h1{
     text-align: center;
 }
 p{
-    text-align: left;
-    font-size: 30pt;
+    /* text-align: left; */
+    font-size: 30px;
+    line-height: 1.0;
+    /* flex-wrap: wrap; */
+    /* overflow-wrap: normal; */
 }
 .topic{
     font-size: 30pt;
@@ -20,14 +23,26 @@ div.experience{
 
     
 }
+.experience{
+    padding-left: 2em;
+    align-self: flex-end;
+
+    
+}
+.radiobtn{
+    margin: 16px 0;
+    box-shadow: 0 3px 5px 2px black;
+    
+    }
 div.outer{
     box-shadow: 0 3px 5px 2px grey;
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)';
     height: 48;
-    padding: 0 30px;
+    padding: 25px 30px;
     min-width: 400px;
     max-width: 800px;
-    margin-left: 28rem;
+    /* margin: auto; */
+    /* margin-left: 28rem; */
     
 }
 .sideimg{

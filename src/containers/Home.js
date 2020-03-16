@@ -3,11 +3,13 @@ import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
+import { RadioGroup, RadioButton } from 'react-radio-buttons';
 import Typography from "@material-ui/core/Typography";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import Play, { Certified } from "../components/Play"
 import "../styles/home.css"
+import "../styles/play.css"
 import { increment, decrement } from "../store/reducers/stepCounter";
 const Santos = require('../assets/Santos.jpg');
 const Exercise2 = require('../assets/exercise2.png')
@@ -22,33 +24,37 @@ const Home = props => {
  let data = [{
    picture: Santos,
    title: "Feed the pupper",
-   description: "Breakfast at 8am",
-   experience: "400"
+   description: "Breakfast at 8am in the morning",
+   experience: "400",
+   type: 'feeding'
  },
  {
   picture: Exercise2,
   title: "Walk Santos",
   description: "Before you go to school, take care of your friend's business",
-  experience: "400"
+  experience: "400",
+  type: 'excercise'
  },
  {
   picture: Playtime,
   title: "Play",
   description: "When you get home from school, play frisbee or something outside",
-  experience: "400"
+  experience: "400",
+  type: 'bonding'
  },
  {
   picture: Kennel1,
   title: "Kennel Training",
   description: "Your friend needs to learn to spend time in the kennel to sleep and to train in stopping bad behavior",
-  experience: "400"
+  experience: "400",
+  type: 'bonding'
    } 
   ]
   return (
-   <div>
+   <div style={{display:'flex', flexDirection: 'column'}}>
      <h1>4 Paw Certified</h1> 
      
-    <div style={{
+    <div class='outer' style={{
       display:'flex'
     }}>
       <p style={{alignItems:'flex-end'}} class='won'>3</p>
@@ -57,25 +63,23 @@ const Home = props => {
       <img class='win' src={Award4}/>
       <p style={{alignItems:'flex-end'}} class='won'>6</p>
       <img class='win' src={Achievement1}/>
-      <Certified completed={"2400/5000"} />
+      <p class='experience'><Certified completed={"2400/5000"} /></p>
     </div>
      
      <h1>Upcoming Jobs</h1>
-   
-     {data.map((quest,index) => {
-       return(
-         
-         <Play
-         {...quest}
-         />
-       )
+    <div style={{display: 'flex', flexDirection: 'column', flexWrap: 'wrap'}}>
 
-     })}
-    
- 
+      {data.map((quest,index) => {
+        return(
+          <Play
+          {...quest}
+            />
+          )
+        })}
+      </div>
     </div>
-  );
-};
+    );
+  };
 
 const mapStateToProps = state => {
   return {

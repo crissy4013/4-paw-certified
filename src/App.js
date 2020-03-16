@@ -14,8 +14,10 @@ import Setting from "./containers/Setting";
 import MainLayout from "./layouts/MainLayout";
 import EmptyLayout from "./layouts/EmptyLayout";
 import BottomNav from "./components/BottomNav/BottomNav";
-import Play from "../src/components/Play"
-import Food from "../src/components/Food"
+import Bonding from "./containers/Bonding"
+import Food from "./components/Food"
+import Feeding from "./containers/Feeding"
+import Exercise from "./containers/Exercise"
 
 const NotFound = () => {
   return <div>Time to play</div>;
@@ -57,10 +59,14 @@ class App extends Component {
         <div style={{ height: "100vh" }}>
           <Router>
             <Switch>
+              <DashboardRoute exact path="/" component={Home} />
+              <DashboardRoute exact path="/task/feeding" component={Feeding} />
+              <DashboardRoute exact path="/task/exercise" component={Exercise} />
+              <DashboardRoute exact path="/task/bonding" component={Bonding} />
+              <DashboardRoute exact path="/task/kennel" component={Feeding} />
               <DashboardRoute path="/dashboard" component={Home} />
               <DashboardRoute path="/setting" component={Setting} />
               
-              <DashboardRoute exact path="/" component={Home} />
               <EmptyRoute component={NotFound} />
             </Switch>
           </Router>
